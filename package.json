@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "start": "nodemon ./src/server/index.ts",
-    "test": "BUG_ID=9 jest",
+    "test": "jest",
     "build": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "herm": "hermione ./test/hermione/example.hermione.js"
+    "herm": "hermione test/hermione/Adaptive.hermione.js",
+    "herm:update": "hermione --update-refs test/hermione/Adaptive.hermione.js"
   },
   "dependencies": {
     "@bem-react/classname": "^1.5.12",
