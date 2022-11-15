@@ -6,8 +6,8 @@
     "test": "jest",
     "build": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "herm": "hermione test/hermione/Adaptive.hermione.js",
-    "herm:update": "hermione --update-refs test/hermione/Adaptive.hermione.js"
+    "herm": "hermione test/hermione",
+    "herm:update": "hermione --update-refs test/hermione"
   },
   "dependencies": {
     "@bem-react/classname": "^1.5.12",

@@ -1,8 +1,8 @@
 const { assert } = require('chai');
 
 describe("Общие требования", async function () {
-    it("вёрстка должна адаптироваться под ширину экрана 1200px", async ({browser}) => {
-        await browser.setWindowSize(1200, 800);
+    it("вёрстка должна адаптироваться под ширину экрана 1100px", async ({browser}) => {
+        await browser.setWindowSize(1100, 800);
         await browser.url("#");
 
         const page = await browser.$(".Application");
@@ -23,6 +23,8 @@ describe("Общие требования", async function () {
             compositeImage: false,
         });
     });
+
+
 
     it("на ширине меньше 576px навигационное меню должно скрываться за гамбургер", async ({browser}) => {
         await browser.setWindowSize(500, 1000);
